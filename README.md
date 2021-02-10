@@ -4,3 +4,7 @@ ffmpeg -i dsa_dashboard.mp4 -i music.mp3 -c:v copy -c:a aac output.mp4
 
 ### Cut video
 ffmpeg -i output.mp4 -ss 00:00:00 -t 00:00:20 -async 1 cut.mp4
+
+
+## Merge operations
+https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-not-mixing-into-a-video-using-ffmpeg/11783474#11783474
