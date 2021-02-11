@@ -15,3 +15,7 @@ https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-not-mixing-i
 
 ## wave
 https://stackoverflow.com/questions/32254818/generating-a-waveform-using-ffmpeg
+
+
+# all
+https://gist.github.com/tayvano/6e2d456a9897f55025e25035478a3a50
