@@ -22,3 +22,8 @@ ffmpeg -i music.mp3 -i bg.jpg -filter_complex "[0:a]showwaves=s=1280x720:mode=li
 
 # all
 https://gist.github.com/tayvano/6e2d456a9897f55025e25035478a3a50
+
+
+## volume reduce
+https://trac.ffmpeg.org/wiki/AudioVolume
+ffmpeg -i input.mp4 -filter:a "volume=0.007" output7.mp4
