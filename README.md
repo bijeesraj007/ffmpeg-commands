@@ -12,6 +12,8 @@ ffmpeg -i dsa_dashboard.mp4 -i music.mp3  -c:v copy -c:a aac -shortest output7.m
 ## Merge operations
 https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-not-mixing-into-a-video-using-ffmpeg/11783474#11783474
 
+## Merge a video file that has audio , with another audio file
+ffmpeg -i input.mp4 -i dsa_ad.mp3 -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 0:v -map "[a]" -c:v copy -ac 2 -shortest final_dsa_ad.mp4
 
 ## wave
 https://stackoverflow.com/questions/32254818/generating-a-waveform-using-ffmpeg
