@@ -29,3 +29,7 @@ https://gist.github.com/tayvano/6e2d456a9897f55025e25035478a3a50
 ## volume reduce
 https://trac.ffmpeg.org/wiki/AudioVolume
 ffmpeg -i input.mp4 -filter:a "volume=0.007" output7.mp4
+
+
+## Many useful commands
+https://medium.com/hamza-solutions/ffmpeg-tool-with-flutter-ac1d68c2fddb
