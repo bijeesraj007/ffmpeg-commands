@@ -33,3 +33,7 @@ ffmpeg -i input.mp4 -filter:a "volume=0.007" output7.mp4
 
 ## Many useful commands
 https://medium.com/hamza-solutions/ffmpeg-tool-with-flutter-ac1d68c2fddb
+
+
+## Volume
+https://www.maketecheasier.com/normalize-music-files-with-ffmpeg/
