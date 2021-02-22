@@ -37,3 +37,8 @@ https://medium.com/hamza-solutions/ffmpeg-tool-with-flutter-ac1d68c2fddb
 
 ## Volume
 https://www.maketecheasier.com/normalize-music-files-with-ffmpeg/
+
+
+
+## Watermark (including animated)
+https://gist.github.com/bennylope/d5d6029fb63648582fed2367ae23cfd6
