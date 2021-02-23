@@ -15,6 +15,12 @@ https://stackoverflow.com/questions/11779490/how-to-add-a-new-audio-not-mixing-i
 ## Merge a video file that has audio , with another audio file
 ffmpeg -i input.mp4 -i dsa_ad.mp3 -filter_complex "[0:a][1:a]amerge=inputs=2[a]" -map 0:v -map "[a]" -c:v copy -ac 2 -shortest final_dsa_ad.mp4
 
+
+## Merge a video file that has audio with another audio file. The new Audio file should have low volume (background music)
+ffmpeg -i video.mp4 -i religious_music.mp3 -c:v copy \
+       -filter_complex "[0:a]aformat=fltp:44100:stereo,apad[0a];[1]aformat=fltp:44100:stereo,volume=.1[1a];[0a][1a]amerge[a]" \
+       -map 0:v -map "[a]" -ac 2 -shortest output.mp4
+
 ## wave
 https://stackoverflow.com/questions/32254818/generating-a-waveform-using-ffmpeg
 
