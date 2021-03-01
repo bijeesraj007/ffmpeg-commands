@@ -8,8 +8,8 @@ ffmpeg -i output.mp4 -ss 00:00:00 -t 00:00:20 -async 1 cut.mp4
 ## Merge 2 files and stop at the shortest input length
 ffmpeg -i dsa_dashboard.mp4 -i music.mp3  -c:v copy -c:a aac -shortest output7.mp4
 
-## Repeat audio file
-https://superuser.com/questions/820830/loop-audio-file-to-a-given-length
+## Repeat audio file until video ends and produce new video file [Worked]
+ffmpeg -i xpresscue.mov -filter_complex "amovie=music.mp3:loop=0,asetpts=N/SR/TB[aud];[0:a][aud]amix[a]" -map 0:v -map '[a]' -c:v copy -c:a aac -b:a 256k -shortest output.mp4
 
 
 ## Merge operations
